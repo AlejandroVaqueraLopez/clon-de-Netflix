@@ -1,0 +1,30 @@
+header{
+
+	/*background:linear-gradient(rgb(6,6,6),rgba(23,23,23,0.1));*/
+	background:linear-gradient(rgb(6,6,6),rgb(22,22,22));
+}
+main{
+	grid-column:1/5;
+	outline:solid red;
+}
+.big-preview__container{
+	outline:solid green;
+/*	background-image:url('../images/movies/big-preview-cover.gif');*/
+	background-size:cover;
+	background-position:center;
+	width:100%;
+	min-height:100vh;
+	position:relative;
+}
+.big-preview-video{
+	height:100%;
+	width:100%;
+}
+.big-preview-info{
+	position:absolute;
+	top:0;
+}
+.big-preview-logo{
+	width:20vw;
+	
+}

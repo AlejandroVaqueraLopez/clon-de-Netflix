@@ -5,6 +5,7 @@
 	--grayFontColor: #808080;
 	--grayHoverFontColor:#e4e4e4;
 	--whiteIconBackground:#F6F6F6;
+	--darkGrayBackground:#141414;
 }
 /*global styles*/
 *{
@@ -14,6 +15,6 @@
 .grid-container{
 	display:grid;
 	grid-template-columns:repeat(4,25%);
-	background:#141414;
+	background:var(--darkGrayBackground);
 	font-family:var(--robotoFontFamily);
 }

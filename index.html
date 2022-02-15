@@ -59,8 +59,10 @@
 				</ul>
 				<!--search input-->
 				<div class="search-icon-container">
-					<img class="search-lent-icon" src="./src/images/search-lent-icon.png" alt="search-lent-icon.png">
-					<input id="search-input" class="search-input" type="text">
+					<a class="search-lent-link" href="#">
+						<img class="search-lent-icon" src="./src/images/search-lent-icon.png" alt="search-lent-icon.png">
+						<input id="search-input" class="search-input" type="text">
+					</a>
 				</div>
 			</nav>
 				<!--header controls-->
@@ -68,20 +70,111 @@
 					<a href="./login.html">
 						<h5>Cuentas</h5>
 					</a>
+				<!--header notification icon-->
 					<div class="notification-container">
-						<img class="notification-bell-icon" src="./src/images/notification-bell-icon.png" alt="notification-bell-icon">
+						<a class="notification-link" href="#">
+							<img class="notification-bell-icon" src="./src/images/notification-bell-icon.png" alt="notification-bell-icon">
+
+				<!--header notification absolute panel-->
+							<div class="notification-panel">
+								<ul>
+									<li>
+										<img src="./src/images/movies/dora-mini-front.png" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Dora y la ciudad perdida</h4>
+											<h6>Hace 5 d&iacuteas</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./src/images/movies/ventana-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno A trav&eacutes de mi ventana</h4>
+											<h6>Hace 1 semana</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./src/images/movies/muertos-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Estamos muertos</h4>
+											<h6>Hace 2 semanas</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./src/images/movies/real-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Tratamiento Real</h4>
+											<h6>Hace 2 semanas</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./src/images/movies/georgina-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Soy Georgina</h4>
+											<h6>Hace 2 semanas</h6>
+										</div>
+									</li>
+
+								</ul>
+							</div>
+						</a>
+
 					</div>
+
 					<div class="account-container">
-						<img class="user-profile-icon" src="" alt="user-profile-icon">
-						<img class="arrow-icon" src="" alt="arrow-icon">
+						<a class="account-link" href="#">
+							<img class="user-profile-icon" src="./src/images/st-user-netflix.PNG" alt="user-profile-icon">
+							<img class="arrow-icon" src="./src/images/arrow-icon.png" alt="arrow-icon">
+
+							<div class="account-link__panel">
+								<ul>
+									<li>
+										<a href="./login.html">
+											<img class="profile-image" src="./src/images/st-user-netflix.PNG" alt="profile-image.png">
+											<h5>Cuentas</h5>
+										</a>
+										<a href="./login.html">
+											<img class="admin-pen-icon" src="./src/images/edit-icon.png" alt="admin-pencil.png">
+											<h5>Administrar perfiles</h5>
+										</a>
+									</li>
+									<li>
+										<a href="./login.html">
+											<img class="user-icon" src="./src/images/user-icon.png" alt="user-icon.png">
+											<h5>Cuenta</h5>
+										</a>
+										<a href="./login.html">
+											<img class="profile-image" src="./src/images/help-icon.png" alt="help-image.png">
+											<h5>Administrar perfiles</h5>
+										</a>
+									</li>
+									<li>
+										<a href="./login.html" class="close-label">
+											<h5>Cerrar sesi&oacuten en Netflix</h5>
+										</a>
+									</li>
+								</ul>
+
+							</div>
+						</a>
 					</div>
 				</div>
-
 
 		</header>
 
 		<main>
 			<section class="big-preview__container">
+				<video class="big-preview-video" autoplay muted loop>
+					<source src="./src/images/movies/big-preview-video.mp4" type="video/mp4">
+				</video>
+
+				<div class="big-preview-info">
+					<img class="big-preview-logo" src="./src/images/movies/big-preview-logo.png" alt="preview-logo.png">
+					<div class="big-preview-top">
+						<img class="top-icon" src="" alt="">
+						<h2></h2>
+					</div>
+				</div>
+
 
 			</section>
 				<!--carousel row START-->
