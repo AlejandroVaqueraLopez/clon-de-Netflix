@@ -1,0 +1,19 @@
+/*variables*/
+:root{
+	--sansFontFamily: 'Martel Sans', sans-serif;
+	--robotoFontFamily:'Roboto', sans-serif;
+	--grayFontColor: #808080;
+	--grayHoverFontColor:#e4e4e4;
+	--whiteIconBackground:#F6F6F6;
+}
+/*global styles*/
+*{
+	margin:0px;
+	padding:0px;
+}
+.grid-container{
+	display:grid;
+	grid-template-columns:repeat(4,25%);
+	background:#141414;
+	font-family:var(--robotoFontFamily);
+}
