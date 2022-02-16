@@ -1,18 +1,25 @@
 .carousel-row__container{
-	background:lightblue;
-	margin-top:-50px;
+	margin-top:-10px;
 	position:relative;
-	height:500px;
+	height:auto;
+	width:100%;
 }
 .carousel-row{
-	background:indianred;
-	margin-bottom:330px;
+	height:350px;
 	padding:0px 45px;
-	margin-right:10px;
 	display:flex;
-	overflow-x:scroll;
-	overflow-y:hidden;
 	position:relative;
+	overflow:hidden;
+	padding-top:100px;
+	margin-top:-210px;/*to keep no distance between rows*/
+	outline:solid red;
+}
+.carousel-row:first-child{
+	background:linear-gradient(rgba(20,20,20,0),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1));
+}
+.carousel-row:nth-child(2){
+}
+.carousel-row:nth-child(3){
 }
 .carousel-item{
 	outline:solid green;
@@ -240,6 +247,9 @@
 
 /*media queries*/
 @media screen and (max-width:900px){
+	.carousel-row{
+		margin-top:70px;
+	}
 	.carousel-item{
 		outline:solid green;
 		width:190px;
@@ -276,4 +286,6 @@
 		cursor:pointer;
 		box-shadow:1px 1px 10px #000;
 	}
+
+
 }
