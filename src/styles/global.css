@@ -18,3 +18,7 @@
 	background:var(--darkGrayBackground);
 	font-family:var(--robotoFontFamily);
 }
+.btn-hover:hover{
+	background:rgba(20,20,20,0.9);
+	border:1px solid 
+}

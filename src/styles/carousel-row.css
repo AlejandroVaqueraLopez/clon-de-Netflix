@@ -3,6 +3,8 @@
 	position:relative;
 	height:auto;
 	width:100%;
+	background:linear-gradient(rgba(20,20,20,0),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1));
+
 }
 .carousel-row{
 	height:310px;
@@ -13,6 +15,13 @@
 	padding-top:130px;
 	margin-top:-210px;/*to keep no distance between rows*/
 	outline:solid red;
+	
+}
+.row-title{
+	color:var(--grayHoverFontColor);
+	font-size:18px;
+	position:absolute;
+	top:90px;
 }
 .carousel-row:first-child{
 	/*background:linear-gradient(rgba(20,20,20,0),rgba(20,20,20,1),rgba(20,20,20,1),rgba(20,20,20,1));*/
@@ -64,11 +73,19 @@
 	box-shadow:1px 1px 10px #000;
 	position:relative;
 	z-index:300;
+	animation:none;
 }
 .carousel-row:hover{
 	position:relative;
 	z-index:200;
 }
+
+/*adyacent element of the current :hover element will be under [BUG FIXEEEED]*/
+.carousel-item:hover + .carousel-item{
+	position:relative;
+	z-index:-100;
+}
+
 /*first element of the row*/
 .carousel-content-first-item:hover{
 	transform:scale(1.6) translateX(25px);
@@ -252,7 +269,13 @@
 
 /*media queries*/
 @media screen and (max-width:900px){
-	.carousel-row{
+	.grid-container{
+	  background:var(--darkGrayBackground);
+	}
+	.carousel-row__container{
+	  background:var(--darkGrayBackground);
+	}
+	.carousel-row:first-child{
 		margin-top:70px;
 	}
 	.carousel-item{

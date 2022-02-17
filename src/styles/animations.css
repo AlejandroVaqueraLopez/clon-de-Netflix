@@ -1,5 +1,5 @@
 .carousel-item{
-	animation:slider-a 20s alternate infinite;
+	/*animation:slider-a 30s alternate infinite;*/
 }
 @keyframes slider-a{
 	0%{
@@ -9,10 +9,10 @@
 		transform:translateX(0px);
 	}
 	25%{
-		transform:translateX(-20%);
+		transform:translateX(-15%);
 	}
 	45%{
-		transform:translateX(-20%);
+		transform:translateX(-15%);
 	}
 	50%{
 		transform:translateX(-50%);
