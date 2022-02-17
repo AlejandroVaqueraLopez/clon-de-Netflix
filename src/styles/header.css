@@ -31,6 +31,17 @@ nav{
 	display:flex;
 	justify-content:space-between;
 }
+.mobile-nav-icon{
+	text-decoration:none;
+	display:none;
+	margin-left:5px;
+}
+.mobile-nav-icon h5{
+	color:var(--grayHoverFontColor);
+	font-size:14px;
+	text-align:center;
+	transition:color 0.5s;
+}
 nav ul{
 	display:flex;
 	outline:solid blue;
@@ -256,6 +267,10 @@ nav ul li a h5{
 
 
 @media screen and (max-width:900px){
+	header{
+		background:linear-gradient(rgb(6,6,6),rgba(23,23,23,0.1));
+		height:40px;
+	}
 	.search-icon-container{
 		display:none;
 	}
@@ -263,8 +278,35 @@ nav ul li a h5{
 		font-size:10px;
 	}
 	nav{
-		display:none;/*temporary*/
+		position:relative;
 	}
-	
+	nav ul{
+		display:none;
+	}
+	.mobile-nav-icon{
+		display:block;
+	}
+	nav:hover ul{
+		display:block;
+		position:absolute;
+		width:140%;
+		top:40px;
+		left:0;
+		background:rgba(0,0,0,0.8);
+	}
+	nav:hover ul li{
+		padding:15px 0px;
+	}
+	nav ul li:hover{
+		background:rgba(66,66,66,66.8);
+	}
+	nav ul li:hover h5{
+		color:var(--grayHoverFontColor);
+	}
+	.notification-panel{
+		width:300px;
+		height:500px;
+		right:-60px;
+		top:10px;
+	}
 }
-
