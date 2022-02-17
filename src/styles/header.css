@@ -14,7 +14,7 @@ header{
 	height:100%;
 	width:10%;
 	min-width:50px;
-	outline:solid blue;
+	/*outline:solid blue;*/
 	display:flex;
 	align-items:center;
 	justify-content:center;
@@ -25,7 +25,7 @@ header{
 	max-width:90px;
 }
 nav{
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 	width:65%;
 	height:100%;
 	display:flex;
@@ -45,7 +45,7 @@ nav{
 }
 nav ul{
 	display:flex;
-	outline:solid blue;
+	/*outline:solid blue;*/
 	display:flex;
 	align-items:center;
 	width:70%;
@@ -70,7 +70,7 @@ nav ul li a h5{
 }
 /*search area*/
 .search-icon-container{
-	outline:solid red;
+	/*outline:solid red;*/
 	width:30%;
 	display:flex;
 	align-items:center;
@@ -88,7 +88,7 @@ nav ul li a h5{
 	color:var(--grayHoverFontColor);
 }
 .header-controls__container{
-	outline:solid green;
+	/*outline:solid green;*/
 	height:100%;
 	width:25%;
 	max-width:200px;
@@ -129,7 +129,7 @@ nav ul li a h5{
 }
 /*notification area*/
 .notification-container{
-	outline:solid blue;
+	/*outline:solid blue;*/
 	height:100%;
 	width:50px;
 	display:flex;
@@ -137,7 +137,7 @@ nav ul li a h5{
 	align-items:center;
 }
 .notification-link{
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 	position:relative;
 }
 .notification-link:hover .notification-panel{
@@ -152,7 +152,7 @@ nav ul li a h5{
 }
 .notification-panel{
 	display:none;
-	outline:solid red;
+	/*outline:solid red;*/
 	position:absolute;
 	width:330px;
 	height:500px;
@@ -192,7 +192,7 @@ nav ul li a h5{
 	color:var(--grayHoverFontColor);
 }
 .account-container{
-	outline:solid green;
+	/*outline:solid green;*/
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
@@ -221,7 +221,7 @@ nav ul li a h5{
 	position:relative;
 }
 .account-link__panel{
-	outline:solid red;
+	/*outline:solid red;*/
 	position:absolute;
 	top:30px;
 	right:40px;
@@ -264,9 +264,7 @@ nav ul li a h5{
 	margin:10px;
 	border-radius:4px;
 }
-
-
-
+/*Media queries*/
 @media screen and (max-width:900px){
 	header{
 		background:linear-gradient(rgb(6,6,6),rgba(23,23,23,0.1));
@@ -280,7 +278,6 @@ nav ul li a h5{
 	}
 	nav{
 		position:relative;
-
 	}
 	nav ul{
 		display:none;

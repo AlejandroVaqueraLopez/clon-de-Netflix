@@ -4,10 +4,10 @@ header{
 }
 main{
 	grid-column:1/5;
-	outline:solid red;
+	/*outline:solid red;*/
 }
 .big-preview__container{
-	outline:solid green;
+	/*outline:solid green;*/
 /*	background-image:url('../images/movies/big-preview-cover.gif');*/
 	background-size:cover;
 	background-position:center;
@@ -37,7 +37,7 @@ main{
 	align-items:flex-start;
 	margin-left:45px;
 	margin-top:70px;
-	outline:solid green;
+	/*outline:solid green;*/
 }
 .big-preview-info__content p{
 	font-size:20px;
@@ -47,10 +47,10 @@ main{
 }
 .big-preview-logo{
 	width:45vw;
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 }
 .big-preview-controls{
-	outline:solid blue;
+	/*outline:solid blue;*/
 	width:100%;
 	height:auto;
 	display:flex;
@@ -84,7 +84,7 @@ main{
 }
 
 .big-preview-category{
-	outline:solid red;
+	/*outline:solid red;*/
 	width:auto;
 	height:auto;
 	margin-top:250px;

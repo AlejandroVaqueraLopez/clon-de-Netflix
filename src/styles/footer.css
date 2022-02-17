@@ -3,11 +3,11 @@ footer{
 	height:auto;
 	padding:0px 45px;
 	margin-top:50px;
-	outline:solid red;
+	/*outline:solid red;*/
 	color:var(--grayFontColor);
 }
 .social-media__container{
-	outline:solid green;;
+	/*outline:solid green;*/
 	width:200px;
 	display:flex;
 	justify-content:space-between;
@@ -18,7 +18,7 @@ footer{
 	width:30px;
 }
 .footer-links__container{
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 	width:100%;
 	height:auto;
 	display:flex;

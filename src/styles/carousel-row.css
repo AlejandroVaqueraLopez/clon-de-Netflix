@@ -14,7 +14,7 @@
 	overflow:hidden;
 	padding-top:130px;
 	margin-top:-210px;/*to keep no distance between rows*/
-	outline:solid red;
+	/*outline:solid red;*/
 	
 }
 .row-title{
@@ -31,7 +31,7 @@
 .carousel-row:nth-child(3){
 }
 .carousel-item{
-	outline:solid green;
+	/*outline:solid green;*/
 	width:230px;
 	height:130px;
 	margin-right:10px;
@@ -45,7 +45,7 @@
 }
 /*preview container*/
 .preview-container{
-	outline:solid green;
+	/*outline:solid green;*/
 	border-radius:5px;
 }
 /*preview container main*/
@@ -63,8 +63,7 @@
 .mini-preview-video{
 	height:100%;
 	width:100%;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
+	border-radius:6px;
 }
 .carousel-content:hover{
 	transform:scale(1.6);
@@ -75,11 +74,14 @@
 	z-index:300;
 	animation:none;
 }
+.carousel-content:hover .mini-preview-video{
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
 .carousel-row:hover{
 	position:relative;
 	z-index:200;
 }
-
 /*adyacent element of the current :hover element will be under [BUG FIXEEEED]*/
 .carousel-item:hover + .carousel-item{
 	position:relative;
@@ -126,7 +128,7 @@
 	display:none;
 	width:100%;
 	height:30%;
-	outline:solid blue;
+	/*outline:solid blue;*/
 }
 .preview-footer input{
 	height:25px;
@@ -148,14 +150,14 @@
 .carousel-item-controls__container{
 	width:100%;
 	height:35px;
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 	display:none;
 	padding:0px 10px;
 	box-sizing:border-box;
 }
 /*preview container controls main*/
 .carousel-controls__main{
-	outline:solid blue;
+	/*outline:solid blue;*/
 	width:60%;
 	height:100%;
 	display:flex;
@@ -210,7 +212,7 @@
 .carousel-content-details{
 	width:100%;
 	height:35px;
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 	display:none;
 	padding:0px 10px;
 	box-sizing:border-box;
@@ -234,7 +236,7 @@
 /*preview container category*/
 .carousel-content-category{
 	height:35px;
-	outline:solid yellow;
+	/*outline:solid yellow;*/
 	padding:0px 10px;
 	display:none;
 	color:var(--grayHoverFontColor);
@@ -245,7 +247,7 @@
 }
 .carousel-content-category ul{
 	display:flex;
-	outline:solid green;
+	/*outline:solid green;*/
 	
 }
 .carousel-content-category ul li{
