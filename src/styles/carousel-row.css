@@ -281,13 +281,13 @@
 		margin-top:70px;
 	}
 	.carousel-item{
-		outline:solid green;
+		/*outline:solid green;*/
 		width:190px;
 		height:110px;
 	}
 	/*preview container*/
 	.preview-container{
-		outline:solid green;
+		/*outline:solid green;*/
 		border-radius:5px;
 		width:190px;
 		height:110px;
