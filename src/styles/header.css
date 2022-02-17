@@ -8,7 +8,7 @@ header{
 	align-items:center;
 	background:var(--darkGrayBackground);
 	position:fixed;
-	z-index:100;
+	z-index:500;
 }
 .logo-container{
 	height:100%;
