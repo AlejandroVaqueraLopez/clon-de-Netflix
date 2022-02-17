@@ -30,6 +30,7 @@ nav{
 	height:100%;
 	display:flex;
 	justify-content:space-between;
+	align-items:center;
 }
 .mobile-nav-icon{
 	text-decoration:none;
@@ -48,7 +49,7 @@ nav ul{
 	display:flex;
 	align-items:center;
 	width:70%;
-
+	
 }
 nav ul li{
 	list-style:none;
@@ -279,6 +280,7 @@ nav ul li a h5{
 	}
 	nav{
 		position:relative;
+
 	}
 	nav ul{
 		display:none;
