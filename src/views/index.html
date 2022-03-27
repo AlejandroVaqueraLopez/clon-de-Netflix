@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Clon de Netflix</title>
+	<link rel="icon" href="./public/images/net-icon.png">
+	<link rel="stylesheet" type="text/css" href="./public/styles/global.css">
+	<link rel="stylesheet" type="text/css"href="./public/styles/header.css">
+	<link rel="stylesheet"type="text/css" href="./public/styles/main.css">
+	<link rel="stylesheet"type="text/css" href="./public/styles/carousel-row.css">
+	<link rel="stylesheet"type="text/css" href="./public/styles/footer.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="grid-container">
+		<!--header start-->
+		<header>
+			<div class="logo-container">
+				<a class="netflix-logo-link" href="./index.html">
+					<img class="netflix-logo" src="./public/images/netflix-logo.png" alt="netflix-logo.png">
+				</a>
+			</div>
+			<!--nav bar area-->
+			<nav>
+				<a class="mobile-nav-icon" href="#">
+					<h5>Explorar</h5>
+					<ul>
+						<li>
+							<a href="#">
+								<h5>Inicio</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5>Audio y subtitulos</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5>Series</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5>Películas</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5>Novedades populares</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<h5>Mi lista</h5>
+							</a>
+						</li>
+					</ul>
+					<!--search input-->
+					<div class="search-icon-container">
+						<a class="search-lent-link" href="#">
+							<img class="search-lent-icon" src="./public/images/search-lent-icon.png" alt="search-lent-icon.png">
+							<input id="search-input" class="search-input" type="text">
+						</a>
+					</div>
+				</nav>
+				</a>
+				<!--header controls-->
+				<div class="header-controls__container">
+					<a href="./login.html">
+						<h5>Cuentas</h5>
+					</a>
+				<!--header notification icon-->
+					<div class="notification-container">
+						<a class="notification-link" href="#">
+							<img class="notification-bell-icon" src="./public/images/notification-bell-icon.png" alt="notification-bell-icon">
+
+				<!--header notification absolute panel-->
+							<div class="notification-panel">
+								<ul>
+									<li>
+										<img src="./public/images/movies/dora-mini-front.png" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Dora y la ciudad perdida</h4>
+											<h6>Hace 5 d&iacuteas</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./public/images/movies/ventana-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno A trav&eacutes de mi ventana</h4>
+											<h6>Hace 1 semana</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./public/images/movies/muertos-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Estamos muertos</h4>
+											<h6>Hace 2 semanas</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./public/images/movies/real-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Tratamiento Real</h4>
+											<h6>Hace 2 semanas</h6>
+										</div>
+									</li>
+									<li>
+										<img src="./public/images/movies/georgina-mini-front.PNG" alt="notification.png">
+										<div class="notification-info">
+											<h4>Estreno Soy Georgina</h4>
+											<h6>Hace 2 semanas</h6>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+						<!--header account container-->
+					<div class="account-container">
+						<a class="account-link" href="#">
+							<img class="user-profile-icon" src="./public/images/st-user-netflix.PNG" alt="user-profile-icon">
+							<img class="arrow-icon" src="./public/images/arrow-icon.png" alt="arrow-icon">
+						<!--header account links zone-->
+							<div class="account-link__panel">
+								<ul>
+									<li>
+										<a href="./login.html">
+											<img class="profile-image" src="./public/images/st-user-netflix.PNG" alt="profile-image.png">
+											<h5>Cuentas</h5>
+										</a>
+										<a href="./login.html">
+											<img class="admin-pen-icon" src="./public/images/edit-icon.png" alt="admin-pencil.png">
+											<h5>Administrar perfiles</h5>
+										</a>
+									</li>
+									<li>
+										<a href="./login.html">
+											<img class="user-icon" src="./public/images/user-icon.png" alt="user-icon.png">
+											<h5>Cuenta</h5>
+										</a>
+										<a href="./login.html">
+											<img class="profile-image" src="./public/images/help-icon.png" alt="help-image.png">
+											<h5>Administrar perfiles</h5>
+										</a>
+									</li>
+									<li>
+										<a href="./login.html" class="close-label">
+											<h5>Cerrar sesi&oacuten en Netflix</h5>
+										</a>
+									</li>
+								</ul>
+
+							</div>
+						</a>
+					</div>
+				</div>
+
+		</header>
+
+		<main>
+			<!--big preview area START-->
+			<section class="big-preview__container">
+				<video class="big-preview-video" autoplay muted loop>
+					<source src="./public/images/movies/big-preview-video.mp4" type="video/mp4">
+				</video>
+
+				<div class="big-preview-info">
+					<!--preview content area-->
+					<div class="big-preview-info__content">
+						<img class="big-preview-logo" src="./public/images/movies/big-preview-logo-white.png" alt="preview-logo.png">
+						<p>
+							Sharon Da Silva, la hijastra de Rose y Christopher lidian con los episodios de sonambulismo de la niña quien se despierta en medio de pesadillas gritando el nombre de un pueblo fantasma, Silent Hill.
+						</p>
+						<!--big-preview-controls-->
+						<div class="big-preview-controls">
+							<a class="big-preview-controls__group btn-hover">
+								<img class="play-icon" src="./public/images/play-icon.png" alt="play-icon.png">
+								<h4>Reproducir</h4>
+							</a>
+							<a class="big-preview-controls__group btn-hover">
+								<img class="info-icon" src="./public/images/info-icon.png" alt="info-icon.png">
+								<h4>M&aacutes informaci&oacuten</h4>
+							</a>
+						</div>
+					</div>
+						<!--big-preview-category-->
+					<div class="big-preview-category">
+						<a class="replay-link" href="#">
+							<img class="replay-icon btn-hover" src="./public/images/replay-icon.png" alt="replay-icon.png">
+						</a>
+						<h4>+18</h4>
+					</div>
+				</div>
+
+			</section>
+			<!--big preview area END-->
+
+			<!--carousel row macro-container START-->
+			<section id="carousel-row-container" class="carousel-row__container">
+				<!---------HERE IS WHERE WE ARE INSERTING OUR TEMPLATE ROWS--->
+			</section>
+					<!--carousel row container END -->
+
+		</main>
+					<!--footer-->
+		<footer>
+			<div class="social-media__container">
+				<a target="_blank" href="https://www.facebook.com/Netflixmx">
+					<img src="./public/images/facebook-icon.png" alt="facebook-icon.png">
+				</a>
+				<a target="_blank" href="https://www.instagram.com/NetflixLAT/">
+					<img src="./public/images/instagram-icon.png" alt="instagram-icon.png">
+				</a>
+				<a target="_blank" href="https://twitter.com/netflixLAT">
+					<img src="./public/images/twitter-icon.png" alt="twitter-icon.png">
+				</a>
+				<a target="_blank" href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA">
+					<img src="./public/images/youtube-icon.png" alt="youtube-icon.png">
+				</a>
+			</div>
+			<!--footer-links-->
+			<div class="footer-links__container">
+				<div class="footer-links__item">
+					<ul>
+						<li>
+							<a href="https://www.netflix.com/browse/subtitles">
+								<h5>Audio y subt&iacutetulos</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://media.netflix.com/es_es/">
+								<h5>Prensa</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://help.netflix.com/legal/privacy">
+								<h5>Privacidad</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://help.netflix.com/es/contactus">
+								<h5>Cont&aacutectanos</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-links__item">
+					<ul>
+						<li>
+							<a href="https://www.netflix.com/browse/audio-description">
+								<h5>Audio descriptivo</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://ir.netflix.net/ir-overview/profile/default.aspx">
+								<h5>Relaciones con inversionistas</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://help.netflix.com/legal/notices">
+								<h5>Avisos legales</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-links__item">
+					<ul>
+						<li>
+							<a href="https://help.netflix.com/es/">
+								<h5>Centro de ayuda</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://jobs.netflix.com/">
+								<h5>Empleos</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://help.netflix.com/legal/privacy#cookies">
+								<h5>Preferencias con las cookies</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-links__item">
+					<ul>
+						<li>
+							<a href="https://www.netflix.com/mx/redeem">
+								<h5>Tarjetas de regalo</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://help.netflix.com/legal/termsofuse">
+								<h5>T&eacuterminos de uso</h5>
+							</a>
+						</li>
+						<li>
+							<a href="https://help.netflix.com/legal/corpinfo">
+								<h5>Informaci&oacuten corporativa</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				<h5 class="service-code">C&oacutedigo de servicio</h5>
+				<h5 class="copyright-label">
+					c 1997-2022 Netflix, Inc.
+				</h5>
+		</footer>
+	</div>
+
+
+	<script type="module" src="./public/templates/assignTemplateRows.js"></script>
+</body>
+</html>

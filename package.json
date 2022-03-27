@@ -1,0 +1,32 @@
+{
+  "name": "clon-de-netflix",
+  "version": "1.0.0",
+  "description": "This is a clone of netflix login and main page with css and javascript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroVaqueraLopez/clon-de-Netflix.git"
+  },
+  "keywords": [
+    "Netflix",
+    "movie",
+    "clone",
+    "page",
+    "watch",
+    "enjoy"
+  ],
+  "author": "Vaquera Lopez Alejandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejandroVaqueraLopez/clon-de-Netflix/issues"
+  },
+  "homepage": "https://github.com/AlejandroVaqueraLopez/clon-de-Netflix#readme",
+  "devDependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
