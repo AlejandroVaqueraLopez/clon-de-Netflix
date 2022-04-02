@@ -15,12 +15,58 @@
 	padding-top:130px;
 	margin-top:-210px;/*to keep no distance between rows*/
 	/*outline:solid red;*/
-	
+}
+
+::-webkit-scrollbar{
+	display:none !important;
+}
+::-webkit-scrollbar-track{
+	background-color:none;
+}
+::-webkit-scrollbar-thumb{
+	background-color:none;
+}
+
+.row-left{
+	position:absolute;
+	left:0;
+	height:130px;
+	width:40px;
+	z-index:350;
+}
+.row-left button{
+	height:100%;
+	width:100%;
+	background:rgba(57,57,57,0.8);
+	border:none;
+}
+.row-left button img{
+	transform:rotate(90deg);
+	width:100%;
+}
+
+.row-right{
+	position:absolute;
+	right:0;
+	height:130px;
+	width:40px;
+	z-index:350;
+}
+.row-right button{
+	height:100%;
+	width:100%;
+	background:rgba(57,57,57,0.8);
+	border:none;
+}
+.row-right button img{
+	transform:rotate(-90deg);
+	width:100%;
 }
 .row-title{
 	color:var(--grayHoverFontColor);
 	font-size:18px;
 	position:absolute;
+	padding-left:10px;
 	top:90px;
 }
 .carousel-row:first-child{
@@ -34,7 +80,8 @@
 	/*outline:solid green;*/
 	width:230px;
 	height:130px;
-	margin-right:10px;
+	margin:0px 5px;
+	transition:all 0.2s;
 }
 .carousel-content{
 	border-radius:4px;
@@ -257,18 +304,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*media queries*/
 @media screen and (max-width:900px){
 	.grid-container{
@@ -316,6 +351,4 @@
 		cursor:pointer;
 		box-shadow:1px 1px 10px #000;
 	}
-
-
 }

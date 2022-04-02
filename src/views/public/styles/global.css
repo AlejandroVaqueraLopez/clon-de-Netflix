@@ -24,3 +24,6 @@
 .btn-hover:hover{
 	transform:scale(1.1);
 }
+.btn-pointer:hover{
+	cursor:pointer;
+}

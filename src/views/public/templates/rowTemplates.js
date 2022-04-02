@@ -21,7 +21,7 @@ let rowItemCreator = (data) => {
 		rowTemplate += 
 		`
 					<!--carousel item COMPONENT START-->
-					<div class="carousel-item">
+					<div class="carousel-item ${data[cont].id}">
 					<!--carousel preview content-->
 						<div class="carousel-content carousel-content-first-item">
 					<!--carousel preview component-->
@@ -75,7 +75,19 @@ let myList = (myListMovieData) => {
 				<div class="carousel-row">
 					<h4 class="row-title">${myListMovieData.title}</h4>
 
+						<div class="row-left">
+							<button class="btn-pointer" id="btn-myList-left">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
+
 					${rowItemCreator(myListMovieData.data)}
+
+						<div class="row-right">
+							<button class="btn-pointer" id="btn-myList-right">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 
 			</div>
 				<!--carousel row END-->
@@ -88,7 +100,17 @@ let watchAgain = (watchAgainMovieData) => {
 				<div class="carousel-row">
 					<h4 class="row-title">${watchAgainMovieData.title}</h4>
 
+						<div class="row-left">
+							<button class="btn-pointer" id="btn-watchAgain-left">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 					${rowItemCreator(watchAgainMovieData.data)}
+						<div class="row-right">
+							<button class="btn-pointer" id="btn-watchAgain-right">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 
 			</div>
 				<!--carousel row END-->
@@ -101,7 +123,17 @@ let trends = (trendsMovieData) => {
 				<div class="carousel-row">
 					<h4 class="row-title">${trendsMovieData.title}</h4>
 
+						<div class="row-left">
+							<button class="btn-pointer" id="btn-trends-left">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 					${rowItemCreator(trendsMovieData.data)}
+						<div class="row-right">
+							<button class="btn-pointer" id="btn-trends-right">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 
 			</div>
 				<!--carousel row END-->
@@ -114,7 +146,17 @@ let hits = (hitsMovieData) => {
 				<div class="carousel-row">
 					<h4 class="row-title">${hitsMovieData.title}</h4>
 
+						<div class="row-left">
+							<button class="btn-pointer" id="btn-hits-left">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 					${rowItemCreator(hitsMovieData.data)}
+						<div class="row-right">
+							<button class="btn-pointer" id="btn-hits-right">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 
 			</div>
 				<!--carousel row END-->
@@ -127,7 +169,17 @@ let causeYouSaw = (causeYouSawMovieData) => {
 				<div class="carousel-row">
 					<h4 class="row-title">${causeYouSawMovieData.title}</h4>
 
+						<div class="row-left">
+							<button class="btn-pointer" id="btn-causeYouSaw-left">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 					${rowItemCreator(causeYouSawMovieData.data)}
+						<div class="row-right">
+							<button class="btn-pointer" id="btn-causeYouSaw-right">
+								<img src="./public/images/expand-preview-icon.png" alt="scroll-icon.png">
+							</button>
+						</div>
 
 			</div>
 				<!--carousel row END-->

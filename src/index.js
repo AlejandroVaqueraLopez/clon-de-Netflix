@@ -12,5 +12,4 @@ app.get("/login",(req,res)=>{
 	res.sendFile(path.join(__dirname,"./views/login.html"));
 })
 
-app.listen(4200,()=>console.log("Server Ready"));
-
+app.listen(4200,()=>console.log("netflix server ready on port 4200"));
